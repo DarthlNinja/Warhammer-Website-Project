@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Image Webpage</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#gallery">GALLERY</a></li>
+    </ul>
+  </nav>
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1>TITUS</h1>
+      <p>Your journey begins here.</p>
+    </div>
+  </header>
+  <section id="gallery">
+    <div class="container">
+      <h2>GALLERY</h2>
+      <p>Explore the universe of Warhammer 40k.</p>
+      <p>Click on the images to learn more about them.</p>
+    </div>      
+    <div class="image-container">
+      <img src="../src/Media/spacemarine.jpg" alt="Space Marine" class="hero-image" data-description="Space Marines, known formally as the Adeptus Astartes,
+       are superhuman warriors in the Warhammer 40,000 universe who serve as the Imperium of Man’s most elite and feared fighting force. 
+
+        Created through extensive genetic modification and implanted with specialized organs known as gene-seed, Space Marines possess immense strength,
+       resilience, and enhanced senses, making them physically and mentally superior to ordinary humans. ">
+    </div>
+    <div class="image-container">
+      <img src="../src/Media/The_God_Emperor_of_Mankind.jpg" alt="God Emperor" class="hero-image" data-description="The Emperor of Mankind is the immortal,
+       godlike ruler of the Imperium of Man in the Warhammer 40,000 universe. Revered as both a sovereign and a deity, he is the architect of humanity's unification,
+        the creator of the Space Marines,
+       and the most powerful human psyker ever known, wielding psychic abilities on a scale far beyond any other being. ">
+    </div>
+  </section>
+  <div id="description-box" class="hidden">
+    <p id="description-text"></p>
+    <button id="close-button">Close</button>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(31, 28, 28);
+
+}
+
+.hero {
+  background-image: url('../Media/titus-red-3840x2160-17888.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 2.7rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; 
+}
+
+.navbar ul li {
+  margin: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: rgb(18, 18, 161); 
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 20px auto; 
+  max-width: 800px; 
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
+  
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+
+}
+.container h2 {
+    margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+color: #f0a500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+.container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+    margin-bottom: 20px;
+color: rgb(247, 239, 239);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  
+}
+.image-container img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.image-container img:active {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+.image-container img:focus {
+  outline: none;
+}
+
+#description-box {
+  position: absolute; 
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none; 
+  max-width: 400px; 
+}
+
+#description-box p {
+  margin: 0 0 10px;
+}
+
+#description-box button {
+  background-color: #f0a500;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#description-box button:hover {
+  background-color: #d18e00;
+}
+
+.hidden {
+  display: none;
+}
+
